@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Academia </title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&amp;family=SUSE:wght@100..800&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --adminuiux-content-font: "Open Sans", sans-serif;
+            --adminuiux-content-font-weight: 400;
+            --adminuiux-title-font: "SUSE", sans-serif;
+            --adminuiux-title-font-weight: 600
+        }
+    </style>
+    <script defer="defer" src="assets/js/appd9fa.js?6b22e6ee1626676f5950"></script>
+    <link href="assets/css/appd9fa.css?6b22e6ee1626676f5950" rel="stylesheet">
+</head>
+
+<body
+    class="main-bg main-bg-opac sharpcornerui adminuiux-header-standard adminuiux-sidebar-iconic theme-blue adminuiux-header-transparent adminuiux-sidebar-fill-white bg-gradient-1 scrollup"
+    data-theme="theme-blue" data-sidebarfill="adminuiux-sidebar-fill-white" data-bs-spy="scroll"
+    data-bs-target="#list-example" data-bs-smooth-scroll="true" tabindex="0"
+    data-sidebarlayout="adminuiux-sidebar-iconic" data-headerlayout="adminuiux-header-standard"
+    data-bggradient="bg-gradient-1" data-headerfill="adminuiux-header-transparent">
+    <div class="pageloader">
+        <div class="container h-100">
+            <div class="row justify-content-center align-items-center text-center h-100">
+                <div class="col-12 mb-auto pt-4"></div>
+                <div class="col-auto"><img src="assets/img/logo.svg" alt="" class="height-60 mb-3">
+                    <p class="h6 mb-0">Academia</p>
+                    <p class="h3 mb-4">Learning</p>
+                    <div class="loader11 mb-2 mx-auto"></div>
+                </div>
+                <div class="col-12 mt-auto pb-4">
+                    <p class="text-secondary">Estamos cargando...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="adminuiux-header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <button class="btn btn-link btn-square sidebar-toggler" type="button"
+                    onclick="initSidebar()"><i class="sidebar-svg" data-feather="menu"></i></button> 
+                
+                <div class="ms-auto"><button class="btn btn-link btn-square btn-icon btn-link-header d-lg-none"
+                        type="button" onclick="openSearch()"><i data-feather="search"></i></button> <button
+                        class="btn btn-link btn-square btnsunmoon btn-link-header" id="btn-layout-modes-dark-page"><i
+                            class="sun mx-auto" data-feather="sun"></i> <i class="moon mx-auto"
+                            data-feather="moon"></i></button>
+ 
+                    <div class="dropdown d-inline-block"><button
+                            class="btn btn-link btn-square btn-icon btn-link-header dropdown-toggle no-caret"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false"><i data-feather="bell"></i>
+                            <span
+                                class="position-absolute top-0 end-0 badge rounded-pill bg-danger p-1"><small>9+</small>
+                                <span class="visually-hidden">unread messages</span></span></button>
+                        <ul class="dropdown-menu dropdown-menu-end notification-dd sm-mi-95px">
+                            <li><a class="dropdown-item p-2" href="#">
+                                    <div class="row gx-3">
+                                        <div class="col-auto">
+                                            <figure class="avatar avatar-40 rounded-circle bg-pink"><i
+                                                    class="bi bi-gift text-white"></i></figure>
+                                        </div>
+                                        <div class="col">
+                                            <p class="mb-2 small">Congratulation! Your admission <span
+                                                    class="fw-bold">#H10215</span> has been processed successfully.</p>
+                                            <span class="row"><span class="col"><span
+                                                        class="badge badge-light rounded-pill text-bg-warning small">Directory</span></span>
+                                                <span class="col-auto small opacity-75">1:00 am</span></span>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item p-2" href="#">
+                                    <div class="row gx-3">
+                                        <div class="col-auto">
+                                            <figure class="avatar avatar-40 rounded-circle bg-success"><i
+                                                    class="bi bi-patch-check text-white"></i></figure>
+                                        </div>
+                                        <div class="col">
+                                            <p class="mb-2 small">Your assignment class 10<sup>th</sup> with IS <span
+                                                    class="fw-bold">#H10215</span> checked now.</p><span
+                                                class="row"><span class="col"><span
+                                                        class="badge badge-light rounded-pill text-bg-primary small">System</span></span>
+                                                <span class="col-auto small opacity-75">1:00 am</span></span>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item p-2" href="#">
+                                    <div class="row gx-3">
+                                        <div class="col-auto">
+                                            <figure class="avatar avatar-40 rounded-circle bg-info"><i
+                                                    class="bi bi-clipboard-check text-white"></i></figure>
+                                        </div>
+                                        <div class="col">
+                                            <p class="mb-2 small">User <span class="fw-bold">Rahana</span> has updated
+                                                <span class="fw-bold">#H10215</span> <b>Harshita</b>'s Profile.</p><span
+                                                class="row"><span class="col"><span
+                                                        class="badge badge-light rounded-pill text-bg-success small">team</span></span>
+                                                <span class="col-auto small opacity-75">1:00 am</span></span>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            <li>
+                                <div class="dropdown-item p-2">
+                                    <div class="row gx-3">
+                                        <div class="col-auto">
+                                            <figure class="avatar avatar-40 rounded-circle bg-warning"><i
+                                                    class="bi bi-bell text-white"></i></figure>
+                                        </div>
+                                        <div class="col">
+                                            <p class="mb-2 small">Your subscription going to expire soon. Please <a
+                                                    href="https://www.adminuiux.com/adminuiux/learning-uiux/profile-subscription.html">upgrade</a>
+                                                to get service interrupt free.</p>
+                                            <p class="opacity-75 small">4 days ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="text-center"><button class="btn btn-link text-center">View all <i
+                                        class="bi bi-arrow-right fs-14"></i></button></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown d-inline-block"><a
+                            class="dropdown-toggle btn btn-link btn-square btn-link-header style-none no-caret px-0"
+                            id="userprofiledd" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+                            <div class="row gx-0 d-inline-flex">
+                                <div class="col-auto align-self-center">
+                                    <figure class="avatar avatar-28 rounded-circle coverimg align-middle"><img
+                                            src="assets/img/modern-ai-image/user-6.jpg" alt=""
+                                            id="userphotoonboarding2"></figure>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end width-300 px-0 sm-mi-45px"
+                            aria-labelledby="userprofiledd">
+                            <div class="px-2"><a href="https://www.adminuiux.com/adminuiux/learning-uiux/myprofile.html"
+                                    class="dropdown-item">
+                                    <div class="row gx-3">
+                                        <div class="col-auto">
+                                            <figure class="avatar avatar-50 rounded-circle coverimg align-middle"><img
+                                                    src="assets/img/modern-ai-image/user-6.jpg" alt=""></figure>
+                                        </div>
+                                        <div class="col align-self-center">
+                                            <h5 class="mb-1">Juan Carlos</h5>
+                                            <p class="small"><i class="bi bi-trophy me-2"></i> 3 Courses</p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="px-2">
+                                <div><a class="dropdown-item" href="learning-myprofile.html"><i data-feather="user"
+                                            class="avatar avatar-18 me-1"></i> Mi perfil</a></div>
+                                <div><a class="dropdown-item" href="learning-mysubscription.html">
+                                        <div class="row">
+                                            <div class="col"><i data-feather="gift" class="avatar avatar-18 me-1"></i>
+                                                Suscripción</div>
+                                            <div class="col-auto">
+                                                <p class="small text-success">Mejorar</p>
+                                            </div>
+                                            <div class="col-auto"><span class="arrow bi bi-chevron-right"></span></div>
+                                        </div>
+                                    </a></div>
+                                <div><a class="dropdown-item" href="learning-settings.html"><i data-feather="settings"
+                                            class="avatar avatar-18 me-1"></i> Configuración</a></div>
+                                <div><a class="dropdown-item theme-red" href="learning-login.html"><i
+                                            data-feather="power" class="avatar avatar-18 me-1"></i> Salir</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="adminuiux-wrap">
+        <div class="adminuiux-sidebar shadow-sm">
+            <div class="adminuiux-sidebar-inner">
+                <ul class="nav flex-column menu-active-line">
+                    <li class="nav-item"><a href="learning-dashboard.html" class="nav-link"><i class="menu-icon bi bi-house-fill"></i>
+                        <span class="menu-name">Inicio</span></a>
+                    </li>
+                    <li class="nav-item"><a href="learning-dashboard.html" class="nav-link"><i class="menu-icon bi bi-bell-fill"></i>
+                        <span class="menu-name">Notificaciones</span></a>
+                    </li>
+                    <li class="nav-item"><a href="learning-dashboard.html" class="nav-link"><i class="menu-icon bi bi-book-fill"></i>
+                        <span class="menu-name">Mis Cursos</span></a>
+                    </li>                    
+                </ul>
+                <div class="mt-auto"></div>
+                <ul class="nav flex-column menu-active-line mb-2">
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            <div class="col-auto">
+                                <div class="avatar avatar-30 coverimg rounded d-block align-top">
+                                    <!--<img
+                                        src="assets/img/modern-ai-image/user-5.jpg" alt="">-->
+                                        <i class="menu-icon bi bi-whatsapp"></i>
+                                    </div>
+                            </div>
+                            <div class="col px-2 menu-name text-start not-iconic">
+                                <p class="mb-0 fs-14 lh-20">Comunicate<br><small class="opacity-50">con nosotros</small>
+                                </p>
+                            </div>
+                            <div class="col-auto not-iconic"><i class="bi bi-chat-dots"></i></div>
+                        </a></li>
+                </ul>
+                <div class="px-3 not-iconic">
+                    <div class="card border-0">
+                        <div class="card-body p-2">
+                            <div class="row gx-2">
+                                <div class="col-12 d-flex justify-content-between"><a
+                                        href="https://www.adminuiux.com/adminuiux/learning-uiux/learning-search-mutual-funds.html"
+                                        class="btn btn-square btn-link"><span class="position-relative"><i
+                                                data-feather="heart"></i> <span
+                                                class="position-absolute top-0 start-100 translate-middle p-1 bg-success rounded-circle"><span
+                                                    class="visually-hidden">New alerts</span> </span></span></a><a
+                                        href="https://www.adminuiux.com/adminuiux/learning-uiux/learning-schedule.html"
+                                        class="btn btn-square btn-link"><span class="position-relative"><i
+                                                data-feather="calendar"></i> <span
+                                                class="position-absolute top-0 start-100 translate-middle p-1 bg-warning rounded-circle"><span
+                                                    class="visually-hidden">New alerts</span> </span></span></a><a
+                                        href="learning-inbox.html" class="btn btn-square btn-link"><i
+                                            data-feather="inbox"></i> </a><a href="learning-help-center.html"
+                                        class="btn btn-square btn-link"><i data-feather="help-circle"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="adminuiux-content has-sidebar" onclick="contentClick()">
+            <div class="container mt-4">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md">
+                        <h5>¡Hola Juan Carlos!</h5>
+                    </div>
+                    <div class="col-12 col-md-auto"></div>
+                </div>
+            </div>
+            <div class="container mt-4" id="main-content">
+                <div class="swiper swipernav">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card adminuiux-card bg-theme-1-subtle mb-4">
+                                <div class="card-body py-0 position-relative">
+                                    <div class="row">
+                                        <div class="col-12 col-sm py-3 py-lg-4 px-lg-4 align-self-center">
+                                            <h2 class="mb-0 text-theme-1">Mejorá tus habilidades</h2>
+                                            <h5>Con nuestra academia.</h5>
+                                            <p class="text-secondary">Todas tus habilidades en un solo lugar</p><a
+                                                href="#" class="btn btn-theme">Sobre nosotros</a>
+                                        </div>
+                                        <div class="col-12 col-sm align-self-end"><img
+                                                src="assets/img/learning/banner.png" alt=""
+                                                class="mw-100 rounded mt-0 mt-sm-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card adminuiux-card bg-theme-1-subtle mb-4">
+                                <div class="card-body py-0 position-relative">
+                                    <div class="row">
+                                        <div class="col-12 col-sm py-3 py-lg-4 px-lg-4 align-self-center">
+                                            <h2 class="mb-0 text-theme-1">Todos nuestros cursos</h2>
+                                            <h5>Al alcance de tu mano</h5>
+                                            <p class="text-secondary">Conseguí el trabajo que te mereces</p><a
+                                                href="#" class="btn btn-theme">Leer más</a>
+                                        </div>
+                                        <div class="col-12 col-sm align-self-end"><img
+                                                src="assets/img/learning/banner.png" alt=""
+                                                class="mw-100 rounded mt-0 mt-sm-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper swipernav">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide width-120">
+                            <div class="card adminuiux-card text-center shadow-sm mb-4">
+                                <div class="card-body">
+                                    <p class="h4 text-theme-1"><i class="bi bi-code-square"></i></p>
+                                    <p class="fs-12 opacity-75 text-truncated">Programación</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-120">
+                            <div class="card adminuiux-card text-center shadow-sm mb-4">
+                                <div class="card-body">
+                                    <p class="h4 text-theme-1"><i class="bi bi-briefcase"></i></p>
+                                    <p class="fs-12 opacity-75 text-truncated">Negocios</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-120">
+                            <div class="card adminuiux-card text-center shadow-sm mb-4">
+                                <div class="card-body">
+                                    <p class="h4 text-theme-1"><i class="menu-icon bi bi-shield-lock"></i>
+
+                                    </p>
+                                    <p class="fs-12 opacity-75 text-truncated">Ciber Seguridad</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-120">
+                            <div class="card adminuiux-card text-center shadow-sm mb-4">
+                                <div class="card-body">
+                                    <p class="h4 text-theme-1"><i class="menu-icon bi bi-megaphone"></i>
+                                    </p>
+                                    <p class="fs-12 opacity-75 text-truncated">Marketing</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-120">
+                            <div class="card adminuiux-card text-center shadow-sm mb-4">
+                                <div class="card-body">
+                                    <p class="h4 text-theme-1"><i class="bi bi-gear-wide-connected"></i></p>
+                                    <p class="fs-12 opacity-75 text-truncated">Productividad</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-120">
+                            <div class="card adminuiux-card text-center shadow-sm mb-4">
+                                <div class="card-body">
+                                    <p class="h4 text-theme-1"><i class="menu-icon bi bi-trophy"></i>
+                                    </p>
+                                    <p class="fs-12 opacity-75 text-truncated">Liderazgo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-120">
+                            <div class="card adminuiux-card text-center shadow-sm mb-4">
+                                <div class="card-body">
+                                    <p class="h4 text-theme-1"><i class="bi bi-palette"></i></p>
+                                    <p class="fs-12 opacity-75 text-truncated">Diseño</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-120">
+                            <div class="card adminuiux-card text-center shadow-sm mb-4">
+                                <div class="card-body">
+                                    <p class="h4 text-theme-1"><i class="bi bi-newspaper"></i></p>
+                                    <p class="fs-12 opacity-75 text-truncated">Comunicación</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-120">
+                            <div class="card adminuiux-card text-center shadow-sm mb-4">
+                                <div class="card-body">
+                                    <p class="h4 text-theme-1"><i class="bi bi-music-note-beamed"></i></p>
+                                    <p class="fs-12 opacity-75 text-truncated">Musica</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-120">
+                            <div class="card adminuiux-card text-center shadow-sm mb-4">
+                                <div class="card-body">
+                                    <p class="h4 text-theme-1"><i class="menu-icon bi bi-code"></i>
+
+                                    </p>
+                                    <p class="fs-12 opacity-75 text-truncated">IT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-120">
+                            <div class="card adminuiux-card text-center shadow-sm mb-4">
+                                <div class="card-body">
+                                    <p class="h4 text-theme-1"><i class="bi bi-building"></i></p>
+                                    <p class="fs-12 opacity-75 text-truncated">Office</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h5>Continúa aprendiendo</h5>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card adminuiux-card shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-auto">
+                                        <div class="avatar avatar-50 coverimg rounded"><img
+                                                src="assets/img/modern-ai-image/taxi-1.jpg" alt=""></div>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="mb-0">IT Data Modal</h6>
+                                        <p class="small">Prof. John Jackson</p>
+                                    </div>
+                                </div>
+                                <div class="row gx-3 align-items-center">
+                                    <div class="col">
+                                        <p class="text-secondary small mb-0">2/18 Capítulos</p>
+                                        <p class="text-secondary small">5 HORAS</p>
+                                    </div>
+                                    <div class="col-auto"><button class="btn btn-theme btn-sm">Continuar <i
+                                                class="bi bi-play"></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card adminuiux-card shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-auto">
+                                        <div class="avatar avatar-50 coverimg rounded"><img
+                                                src="assets/img/modern-ai-image/tree-6.jpg" alt=""></div>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="mb-0">Bio Management</h6>
+                                        <p class="small">Prof. Jinjo Min</p>
+                                    </div>
+                                </div>
+                                <div class="row gx-3 align-items-center">
+                                    <div class="col">
+                                        <p class="text-secondary small mb-0">0/9 Capítulos</p>
+                                        <p class="text-secondary small">2 HORAS</p>
+                                    </div>
+                                    <div class="col-auto"><button class="btn btn-theme btn-sm">Comenzar <i
+                                                class="bi bi-play"></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card adminuiux-card shadow-sm mb-4">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="avatar avatar-50 rounded bg-theme-1-subtle text-theme-1 h4 mb-3"><i
+                                                class="bi bi-journal-check"></i></div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <h6 class="mb-0">Assignment 3</h6>
+                                        <p class="small">IT Data Modal</p>
+                                    </div>
+                                </div>
+                                <div class="row gx-3 align-items-center">
+                                    <div class="col">
+                                        <p class="text-secondary small mb-0">0/9 Capítulos</p>
+                                        <p class="text-secondary small">2 HORAS</p>
+                                    </div>
+                                    <div class="col-auto"><button class="btn btn-theme btn-sm">Comenzar <i
+                                                class="bi bi-play"></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card adminuiux-card shadow-sm">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="avatar avatar-50 coverimg rounded mb-3"><img
+                                                src="assets/img/modern-ai-image/flamingo-1.jpg" alt=""></div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <h6 class="mb-0">Eco-Sensativity</h6>
+                                        <p class="small">Jenelia</p>
+                                    </div>
+                                </div>
+                                <div class="row gx-3 align-items-center">
+                                    <div class="col">
+                                        <p class="text-secondary small mb-0">0/9 Capítulos</p>
+                                        <p class="text-secondary small">2 HORAS</p>
+                                    </div>
+                                    <div class="col-auto"><button class="btn btn-theme btn-sm">Comenzar <i
+                                                class="bi bi-play"></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="mb-2">Recomendados para vos</h5>
+                <div class="swiper swipernavpagination mb-3">
+                    <div class="swiper-wrapper mb-3">
+                        <div class="swiper-slide width-250">
+                            <div class="card adminuiux-card shadow-sm mb-4 theme-green">
+                                <div class="card-body position-relative"><span
+                                        class="ribbon bg-theme-1 position-absolute top-0 end-0 z-index-1 mt-4">Best
+                                        Seller</span>
+                                    <div class="height-180 w-100 rounded coverimg position-relative mb-3"><img
+                                            src="assets/img/modern-ai-image/user-5.jpg" alt=""></div><a
+                                        href="learning-course-details.html" class="style-none d-block mb-2">
+                                        <h6 class="mb-0 text-truncated">Fundamental of UX Design process</h6>
+                                        <p class="small text-secondary">By Walter Smith</p>
+                                    </a>
+                                    <p class="text-secondary"><b>4.5</b> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-half small text-warning"></i></p>
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h5>$ 75.00 <s class="opacity-50 fs-14">$ 110.00</s></h5>
+                                        </div>
+                                        <div class="col-auto"><button class="btn btn-link btn-square rounded-circle"><i
+                                                    class="bi bi-cart"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-250">
+                            <div class="card adminuiux-card shadow-sm mb-4">
+                                <div class="card-body position-relative">
+                                    <div class="height-180 w-100 rounded coverimg position-relative mb-3"><img
+                                            src="assets/img/modern-ai-image/bus-3.jpg" alt=""></div><a
+                                        href="learning-course-details.html" class="style-none d-block mb-2">
+                                        <h6 class="mb-0 text-truncated">UX Research and Wireframing</h6>
+                                        <p class="small text-secondary">By Will Gill</p>
+                                    </a>
+                                    <p class="text-secondary"><b>4.0</b> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star small text-warning"></i></p>
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h5>$ 80.00 <s class="opacity-50 fs-14">$ 120.00</s></h5>
+                                        </div>
+                                        <div class="col-auto"><button
+                                                class="btn btn-link btn-square rounded-circle active"><i
+                                                    class="bi bi-cart"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-250">
+                            <div class="card adminuiux-card shadow-sm mb-4">
+                                <div class="card-body position-relative">
+                                    <div class="height-180 w-100 rounded coverimg position-relative mb-3"><img
+                                            src="assets/img/modern-ai-image/tree-7.jpg" alt=""></div><a
+                                        href="learning-course-details.html" class="style-none d-block mb-2">
+                                        <h6 class="mb-0 text-truncated">Digital Design at the edge</h6>
+                                        <p class="small text-secondary">By Max Barter</p>
+                                    </a>
+                                    <p class="text-secondary"><b>4.5</b> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-half small text-warning"></i></p>
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h5>$ 80.00</h5>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="input-group input-group-sm"><button
+                                                    class="btn btn-link btn-square rounded-circle"><i
+                                                        class="bi bi-dash"></i></button> <input
+                                                    class="border-0 form-control bg-none text-center width-30 px-0"
+                                                    value="1"> <button class="btn btn-link btn-square rounded-circle"><i
+                                                        class="bi bi-plus"></i></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-250">
+                            <div class="card adminuiux-card shadow-sm mb-4">
+                                <div class="card-body position-relative">
+                                    <div class="height-180 w-100 rounded coverimg position-relative mb-3"><img
+                                            src="assets/img/modern-ai-image/lion-5.jpg" alt=""></div><a
+                                        href="learning-course-details.html" class="style-none d-block mb-2">
+                                        <h6 class="mb-0 text-truncated">Design with McGrow</h6>
+                                        <p class="small text-secondary">By McGrow and Hills</p>
+                                    </a>
+                                    <p class="text-secondary"><b>5.0</b> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i></p>
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h5>$ 115.00 <s class="opacity-50 fs-14">$ 150.00</s></h5>
+                                        </div>
+                                        <div class="col-auto"><button class="btn btn-link btn-square rounded-circle"><i
+                                                    class="bi bi-cart"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-250">
+                            <div class="card adminuiux-card shadow-sm mb-4">
+                                <div class="card-body position-relative">
+                                    <div class="height-180 w-100 rounded coverimg position-relative mb-3"><img
+                                            src="assets/img/modern-ai-image/kids-5.jpg" alt=""></div><a
+                                        href="learning-course-details.html" class="style-none d-block mb-2">
+                                        <h6 class="mb-0 text-truncated">UX Universal Risk</h6>
+                                        <p class="small text-secondary">By Will Gill</p>
+                                    </a>
+                                    <p class="text-secondary"><b>4.0</b> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star small text-warning"></i></p>
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h5>$ 80.00 <s class="opacity-50 fs-14">$ 120.00</s></h5>
+                                        </div>
+                                        <div class="col-auto"><button class="btn btn-link btn-square rounded-circle"><i
+                                                    class="bi bi-cart"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-250">
+                            <div class="card adminuiux-card shadow-sm mb-4">
+                                <div class="card-body position-relative">
+                                    <div class="height-180 w-100 rounded coverimg position-relative mb-3"><img
+                                            src="assets/img/modern-ai-image/team-sq-2.jpg" alt=""></div><a
+                                        href="learning-course-details.html" class="style-none d-block mb-2">
+                                        <h6 class="mb-0 text-truncated">Design for Good and People</h6>
+                                        <p class="small text-secondary">By Max Johnson</p>
+                                    </a>
+                                    <p class="text-secondary"><b>5.0</b> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i> <i
+                                            class="bi bi-star-fill small text-warning"></i></p>
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h5>$ 90.00 <s class="opacity-50 fs-14">$ 150.00</s></h5>
+                                        </div>
+                                        <div class="col-auto"><button
+                                                class="btn btn-link btn-square rounded-circle active"><i
+                                                    class="bi bi-cart"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <h5 class="mb-2">Lo último</h5>
+                <div class="swiper swipernavpagination mb-3">
+                    <div class="swiper-wrapper mb-3">
+                        <div class="swiper-slide width-250">
+                            <div class="card adminuiux-card shadow-sm mb-4">
+                                <div class="card-header"><a href="learning-course-details.html" class="style-none">
+                                        <h6 class="mb-0 text-truncated">Design with McGrow</h6>
+                                        <p class="small text-secondary">By McGrow and Hills</p>
+                                    </a></div>
+                                <div class="card-body pt-0 position-relative">
+                                    <div class="height-180 w-100 rounded coverimg position-relative mb-3"><img
+                                            src="assets/img/modern-ai-image/lion-5.jpg" alt=""></div>
+                                    <div class="row align-items-center mb-2">
+                                        <div class="col">
+                                            <h5 class="mb-0">$ 115.00 <s class="opacity-50 fs-14">$ 150.00</s></h5>
+                                            <p class="text-secondary"><i class="bi bi-star-fill small text-warning"></i>
+                                                <b>4.0</b> <small class="text-secondary">(251 Reviews)</small></p>
+                                        </div>
+                                        <div class="col-auto"></div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col"><button
+                                                class="btn btn-sm btn-square btn-outline-theme rounded-circle theme-red me-1"><i
+                                                    class="bi bi-heart"></i></button> <button
+                                                class="btn btn-sm btn-square btn-outline-theme rounded-circle theme-skyblue me-1"><i
+                                                    class="bi bi-arrow-90deg-right"></i></button></div>
+                                        <div class="col-auto"><button class="btn btn-link btn-square rounded-circle"><i
+                                                    class="bi bi-cart"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-250">
+                            <div class="card adminuiux-card shadow-sm mb-4">
+                                <div class="card-header"><a href="learning-course-details.html" class="style-none">
+                                        <h6 class="mb-0 text-truncated">UX Universal Risk</h6>
+                                        <p class="small text-secondary">By Will Gill</p>
+                                    </a></div>
+                                <div class="card-body pt-0 position-relative">
+                                    <div class="height-180 w-100 rounded coverimg position-relative mb-3"><img
+                                            src="assets/img/modern-ai-image/kids-5.jpg" alt=""></div>
+                                    <div class="row align-items-center mb-2">
+                                        <div class="col">
+                                            <h5 class="mb-0">$ 80.00 <s class="opacity-50 fs-14">$ 120.00</s></h5>
+                                            <p class="text-secondary"><i class="bi bi-star-fill small text-warning"></i>
+                                                <b>5.0</b> <small class="text-secondary">(315 Reviews)</small></p>
+                                        </div>
+                                        <div class="col-auto"></div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col"><button
+                                                class="btn btn-sm btn-square btn-outline-theme rounded-circle theme-red me-1"><i
+                                                    class="bi bi-heart"></i></button> <button
+                                                class="btn btn-sm btn-square btn-outline-theme rounded-circle theme-skyblue me-1"><i
+                                                    class="bi bi-arrow-90deg-right"></i></button></div>
+                                        <div class="col-auto"><button class="btn btn-link btn-square rounded-circle"><i
+                                                    class="bi bi-cart"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-250">
+                            <div class="card adminuiux-card shadow-sm mb-4">
+                                <div class="card-header"><a href="learning-course-details.html" class="style-none">
+                                        <h6 class="mb-0 text-truncated">Design for Good and People</h6>
+                                        <p class="small text-secondary">By Max Johnson</p>
+                                    </a></div>
+                                <div class="card-body pt-0 position-relative">
+                                    <div class="height-180 w-100 rounded coverimg position-relative mb-3"><img
+                                            src="assets/img/modern-ai-image/team-sq-2.jpg" alt=""></div>
+                                    <div class="row align-items-center mb-2">
+                                        <div class="col">
+                                            <h5 class="mb-0">$ 90.00 <s class="opacity-50 fs-14">$ 150.00</s></h5>
+                                            <p class="text-secondary"><i class="bi bi-star-fill small text-warning"></i>
+                                                <b>4.0</b> <small class="text-secondary">(352 Reviews)</small></p>
+                                        </div>
+                                        <div class="col-auto"></div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col"><button
+                                                class="btn btn-sm btn-square btn-outline-theme rounded-circle theme-red me-1"><i
+                                                    class="bi bi-heart"></i></button> <button
+                                                class="btn btn-sm btn-square btn-outline-theme rounded-circle theme-skyblue me-1"><i
+                                                    class="bi bi-arrow-90deg-right"></i></button></div>
+                                        <div class="col-auto"><button
+                                                class="btn btn-link btn-square rounded-circle active"><i
+                                                    class="bi bi-cart"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-250">
+                            <div class="card adminuiux-card shadow-sm mb-4">
+                                <div class="card-header"><a href="learning-course-details.html" class="style-none">
+                                        <h6 class="mb-0 text-truncated">Fundamental of UX Design process</h6>
+                                        <p class="small text-secondary">By Walter Smith</p>
+                                    </a></div>
+                                <div class="card-body pt-0 position-relative">
+                                    <div class="height-180 w-100 rounded coverimg position-relative mb-3"><img
+                                            src="assets/img/modern-ai-image/user-5.jpg" alt=""></div>
+                                    <div class="row align-items-center mb-2">
+                                        <div class="col">
+                                            <h5 class="mb-0">$ 75.00 <s class="opacity-50 fs-14">$ 110.00</s></h5>
+                                            <p class="text-secondary"><i class="bi bi-star-fill small text-warning"></i>
+                                                <b>4.5</b> <small class="text-secondary">(156 Reviews)</small></p>
+                                        </div>
+                                        <div class="col-auto"></div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col"><button
+                                                class="btn btn-sm btn-square btn-outline-theme rounded-circle theme-red me-1"><i
+                                                    class="bi bi-heart"></i></button> <button
+                                                class="btn btn-sm btn-square btn-outline-theme rounded-circle theme-skyblue me-1"><i
+                                                    class="bi bi-share"></i></button></div>
+                                        <div class="col-auto"><button class="btn btn-link btn-square rounded-circle"><i
+                                                    class="bi bi-cart"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-250">
+                            <div class="card adminuiux-card shadow-sm mb-4">
+                                <div class="card-header"><a href="learning-course-details.html" class="style-none">
+                                        <h6 class="mb-0 text-truncated">UX Research and Wireframing</h6>
+                                        <p class="small text-secondary">By Will Gill</p>
+                                    </a></div>
+                                <div class="card-body pt-0 position-relative">
+                                    <div class="height-180 w-100 rounded coverimg position-relative mb-3"><img
+                                            src="assets/img/modern-ai-image/bus-3.jpg" alt=""></div>
+                                    <div class="row align-items-center mb-2">
+                                        <div class="col">
+                                            <h5 class="mb-0">$ 80.00 <s class="opacity-50 fs-14">$ 120.00</s></h5>
+                                            <p class="text-secondary"><i class="bi bi-star-fill small text-warning"></i>
+                                                <b>4.5</b> <small class="text-secondary">(156 Reviews)</small></p>
+                                        </div>
+                                        <div class="col-auto"></div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col"><button
+                                                class="btn btn-sm btn-square btn-outline-theme rounded-circle theme-red me-1"><i
+                                                    class="bi bi-heart"></i></button> <button
+                                                class="btn btn-sm btn-square btn-outline-theme rounded-circle theme-skyblue me-1"><i
+                                                    class="bi bi-share"></i></button></div>
+                                        <div class="col-auto"><button
+                                                class="btn btn-link btn-square rounded-circle active"><i
+                                                    class="bi bi-cart"></i></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide width-250">
+                            <div class="card adminuiux-card shadow-sm mb-4">
+                                <div class="card-header"><a href="learning-course-details.html" class="style-none">
+                                        <h6 class="mb-0 text-truncated">Digital Design at the edge</h6>
+                                        <p class="small text-secondary">By Max Barter</p>
+                                    </a></div>
+                                <div class="card-body pt-0 position-relative"><span
+                                        class="ribbon bg-theme-1 position-absolute top-0 end-0 z-index-1 mt-3">Trending</span>
+                                    <div class="height-180 w-100 rounded coverimg position-relative mb-3"><img
+                                            src="assets/img/modern-ai-image/tree-7.jpg" alt=""></div>
+                                    <div class="row align-items-center mb-2">
+                                        <div class="col">
+                                            <h5 class="mb-0">$ 80.00 <s class="opacity-50 fs-14">$ 120.00</s></h5>
+                                            <p class="text-secondary"><i class="bi bi-star-fill small text-warning"></i>
+                                                <b>4.5</b> <small class="text-secondary">(156 Reviews)</small></p>
+                                        </div>
+                                        <div class="col-auto"></div>
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col"><button
+                                                class="btn btn-sm btn-square btn-outline-theme rounded-circle theme-red me-1"><i
+                                                    class="bi bi-heart"></i></button> <button
+                                                class="btn btn-sm btn-square btn-outline-theme rounded-circle theme-skyblue me-1"><i
+                                                    class="bi bi-arrow-90deg-right"></i></button></div>
+                                        <div class="col-auto">
+                                            <div class="input-group input-group-sm"><button
+                                                    class="btn btn-link btn-square rounded-circle"><i
+                                                        class="bi bi-dash"></i></button> <input
+                                                    class="border-0 form-control bg-none text-center width-30 px-0"
+                                                    value="1"> <button class="btn btn-link btn-square rounded-circle"><i
+                                                        class="bi bi-plus"></i></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="position-fixed bottom-0 end-0 m-3 z-index-5"><button
+            class="btn btn-theme btn-square shadow mt-2 d-none rounded-circle" id="backtotop"><i
+                class="bi bi-arrow-up"></i></button></div>
+</body>
+</html>
