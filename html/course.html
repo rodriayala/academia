@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Academia </title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&amp;family=SUSE:wght@100..800&amp;display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --adminuiux-content-font: "Open Sans", sans-serif;
+            --adminuiux-content-font-weight: 400;
+            --adminuiux-title-font: "SUSE", sans-serif;
+            --adminuiux-title-font-weight: 600
+        }
+    </style>
+    <script defer="defer" src="assets/js/appd9fa.js?6b22e6ee1626676f5950"></script>
+    <link href="assets/css/appd9fa.css?6b22e6ee1626676f5950" rel="stylesheet">
+</head>
+
+<body
+    class="main-bg main-bg-opac sharpcornerui adminuiux-header-standard adminuiux-sidebar-iconic theme-blue adminuiux-header-transparent adminuiux-sidebar-fill-white bg-gradient-1 scrollup"
+    data-theme="theme-blue" data-sidebarfill="adminuiux-sidebar-fill-white" data-bs-spy="scroll"
+    data-bs-target="#list-example" data-bs-smooth-scroll="true" tabindex="0"
+    data-sidebarlayout="adminuiux-sidebar-iconic" data-headerlayout="adminuiux-header-standard"
+    data-bggradient="bg-gradient-1" data-headerfill="adminuiux-header-transparent">
+    <div class="pageloader">
+        <div class="container h-100">
+            <div class="row justify-content-center align-items-center text-center h-100">
+                <div class="col-12 mb-auto pt-4"></div>
+                <div class="col-auto"><img src="assets/img/logo.svg" alt="" class="height-60 mb-3">
+                    <p class="h6 mb-0">Academia</p>
+                    <p class="h3 mb-4">Learning</p>
+                    <div class="loader11 mb-2 mx-auto"></div>
+                </div>
+                <div class="col-12 mt-auto pb-4">
+                    <p class="text-secondary">Estamos cargando...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="adminuiux-header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <button class="btn btn-link btn-square sidebar-toggler" type="button"
+                    onclick="initSidebar()"><i class="sidebar-svg" data-feather="menu"></i></button> 
+                
+                <div class="ms-auto"><button class="btn btn-link btn-square btn-icon btn-link-header d-lg-none"
+                        type="button" onclick="openSearch()"><i data-feather="search"></i></button> <button
+                        class="btn btn-link btn-square btnsunmoon btn-link-header" id="btn-layout-modes-dark-page"><i
+                            class="sun mx-auto" data-feather="sun"></i> <i class="moon mx-auto"
+                            data-feather="moon"></i></button>
+ 
+                    <div class="dropdown d-inline-block"><button
+                            class="btn btn-link btn-square btn-icon btn-link-header dropdown-toggle no-caret"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false"><i data-feather="bell"></i>
+                            <span
+                                class="position-absolute top-0 end-0 badge rounded-pill bg-danger p-1"><small>9+</small>
+                                <span class="visually-hidden">unread messages</span></span></button>
+                        <ul class="dropdown-menu dropdown-menu-end notification-dd sm-mi-95px">
+                            <li><a class="dropdown-item p-2" href="#">
+                                    <div class="row gx-3">
+                                        <div class="col-auto">
+                                            <figure class="avatar avatar-40 rounded-circle bg-pink"><i
+                                                    class="bi bi-gift text-white"></i></figure>
+                                        </div>
+                                        <div class="col">
+                                            <p class="mb-2 small">Congratulation! Your admission <span
+                                                    class="fw-bold">#H10215</span> has been processed successfully.</p>
+                                            <span class="row"><span class="col"><span
+                                                        class="badge badge-light rounded-pill text-bg-warning small">Directory</span></span>
+                                                <span class="col-auto small opacity-75">1:00 am</span></span>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item p-2" href="#">
+                                    <div class="row gx-3">
+                                        <div class="col-auto">
+                                            <figure class="avatar avatar-40 rounded-circle bg-success"><i
+                                                    class="bi bi-patch-check text-white"></i></figure>
+                                        </div>
+                                        <div class="col">
+                                            <p class="mb-2 small">Your assignment class 10<sup>th</sup> with IS <span
+                                                    class="fw-bold">#H10215</span> checked now.</p><span
+                                                class="row"><span class="col"><span
+                                                        class="badge badge-light rounded-pill text-bg-primary small">System</span></span>
+                                                <span class="col-auto small opacity-75">1:00 am</span></span>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            <li><a class="dropdown-item p-2" href="#">
+                                    <div class="row gx-3">
+                                        <div class="col-auto">
+                                            <figure class="avatar avatar-40 rounded-circle bg-info"><i
+                                                    class="bi bi-clipboard-check text-white"></i></figure>
+                                        </div>
+                                        <div class="col">
+                                            <p class="mb-2 small">User <span class="fw-bold">Rahana</span> has updated
+                                                <span class="fw-bold">#H10215</span> <b>Harshita</b>'s Profile.</p><span
+                                                class="row"><span class="col"><span
+                                                        class="badge badge-light rounded-pill text-bg-success small">team</span></span>
+                                                <span class="col-auto small opacity-75">1:00 am</span></span>
+                                        </div>
+                                    </div>
+                                </a></li>
+                            <li>
+                                <div class="dropdown-item p-2">
+                                    <div class="row gx-3">
+                                        <div class="col-auto">
+                                            <figure class="avatar avatar-40 rounded-circle bg-warning"><i
+                                                    class="bi bi-bell text-white"></i></figure>
+                                        </div>
+                                        <div class="col">
+                                            <p class="mb-2 small">Your subscription going to expire soon. Please <a
+                                                    href="https://www.adminuiux.com/adminuiux/learning-uiux/profile-subscription.html">upgrade</a>
+                                                to get service interrupt free.</p>
+                                            <p class="opacity-75 small">4 days ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="text-center"><button class="btn btn-link text-center">View all <i
+                                        class="bi bi-arrow-right fs-14"></i></button></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown d-inline-block"><a
+                            class="dropdown-toggle btn btn-link btn-square btn-link-header style-none no-caret px-0"
+                            id="userprofiledd" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+                            <div class="row gx-0 d-inline-flex">
+                                <div class="col-auto align-self-center">
+                                    <figure class="avatar avatar-28 rounded-circle coverimg align-middle"><img
+                                            src="assets/img/modern-ai-image/user-6.jpg" alt=""
+                                            id="userphotoonboarding2"></figure>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end width-300 px-0 sm-mi-45px"
+                            aria-labelledby="userprofiledd">
+                            <div class="px-2"><a href="https://www.adminuiux.com/adminuiux/learning-uiux/myprofile.html"
+                                    class="dropdown-item">
+                                    <div class="row gx-3">
+                                        <div class="col-auto">
+                                            <figure class="avatar avatar-50 rounded-circle coverimg align-middle"><img
+                                                    src="assets/img/modern-ai-image/user-6.jpg" alt=""></figure>
+                                        </div>
+                                        <div class="col align-self-center">
+                                            <h5 class="mb-1">Juan Carlos</h5>
+                                            <p class="small"><i class="bi bi-trophy me-2"></i> 3 Courses</p>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="px-2">
+                                <div><a class="dropdown-item" href="learning-myprofile.html"><i data-feather="user"
+                                            class="avatar avatar-18 me-1"></i> Mi perfil</a></div>
+                                <div><a class="dropdown-item" href="learning-mysubscription.html">
+                                        <div class="row">
+                                            <div class="col"><i data-feather="gift" class="avatar avatar-18 me-1"></i>
+                                                Suscripción</div>
+                                            <div class="col-auto">
+                                                <p class="small text-success">Mejorar</p>
+                                            </div>
+                                            <div class="col-auto"><span class="arrow bi bi-chevron-right"></span></div>
+                                        </div>
+                                    </a></div>
+                                <div><a class="dropdown-item" href="settings.html"><i data-feather="settings"
+                                            class="avatar avatar-18 me-1"></i> Configuración</a></div>
+                                <div><a class="dropdown-item theme-red" href="login.html"><i
+                                            data-feather="power" class="avatar avatar-18 me-1"></i> Salir</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="adminuiux-wrap">
+        <div class="adminuiux-sidebar shadow-sm">
+            <div class="adminuiux-sidebar-inner">
+                <ul class="nav flex-column menu-active-line">
+                    <li class="nav-item"><a href="desk.html" class="nav-link"><i class="menu-icon bi bi-house-fill"></i>
+                        <span class="menu-name">Inicio</span></a>
+                    </li>
+                    <li class="nav-item"><a href="learning-dashboard.html" class="nav-link"><i class="menu-icon bi bi-bell-fill"></i>
+                        <span class="menu-name">Notificaciones</span></a>
+                    </li>
+                    <li class="nav-item"><a href="learning-dashboard.html" class="nav-link"><i class="menu-icon bi bi-book-fill"></i>
+                        <span class="menu-name">Mis Cursos</span></a>
+                    </li>                    
+                </ul>
+                <div class="mt-auto"></div>
+                <ul class="nav flex-column menu-active-line mb-2">
+                    <li class="nav-item"><a href="#" class="nav-link">
+                            <div class="col-auto">
+                                <div class="avatar avatar-30 coverimg rounded d-block align-top">
+                                    <!--<img
+                                        src="assets/img/modern-ai-image/user-5.jpg" alt="">-->
+                                        <i class="menu-icon bi bi-whatsapp"></i>
+                                    </div>
+                            </div>
+                            <div class="col px-2 menu-name text-start not-iconic">
+                                <p class="mb-0 fs-14 lh-20">Comunicate<br><small class="opacity-50">con nosotros</small>
+                                </p>
+                            </div>
+                            <div class="col-auto not-iconic"><i class="bi bi-chat-dots"></i></div>
+                        </a></li>
+                </ul>
+                <div class="px-3 not-iconic">
+                    <div class="card border-0">
+                        <div class="card-body p-2">
+                            <div class="row gx-2">
+                                <div class="col-12 d-flex justify-content-between"><a
+                                        href="https://www.adminuiux.com/adminuiux/learning-uiux/learning-search-mutual-funds.html"
+                                        class="btn btn-square btn-link"><span class="position-relative"><i
+                                                data-feather="heart"></i> <span
+                                                class="position-absolute top-0 start-100 translate-middle p-1 bg-success rounded-circle"><span
+                                                    class="visually-hidden">New alerts</span> </span></span></a><a
+                                        href="https://www.adminuiux.com/adminuiux/learning-uiux/learning-schedule.html"
+                                        class="btn btn-square btn-link"><span class="position-relative"><i
+                                                data-feather="calendar"></i> <span
+                                                class="position-absolute top-0 start-100 translate-middle p-1 bg-warning rounded-circle"><span
+                                                    class="visually-hidden">New alerts</span> </span></span></a><a
+                                        href="learning-inbox.html" class="btn btn-square btn-link"><i
+                                            data-feather="inbox"></i> </a><a href="learning-help-center.html"
+                                        class="btn btn-square btn-link"><i data-feather="help-circle"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="adminuiux-content has-sidebar" onclick="contentClick()">
+            <div class="container mt-4">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md">
+                        <h5>Sobre el curso</h5>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-3 mb-md-0">
+                                <li class="breadcrumb-item bi"><a href="learning-dashboard.html">Desarrollo Web</a></li>
+                                <li class="breadcrumb-item bi"><a href="learning-courses-e-courses.html">Intermedio</a>
+                                </li>
+                                <li class="breadcrumb-item active bi" aria-current="page">2 Horas</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-md-auto"></div>
+                </div>
+            </div>
+            <div class="container mt-4" id="main-content">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="card adminuiux-card bg-theme-1-subtle mb-4">
+                            <div class="card-body">
+                                <h4 class="mb-3 text-truncated">Programación con Python desde cero</h4>
+                                <div class="row align-items-center">
+                                    <div class="col-auto mb-3 mb-sm-0">
+                                        <div class="avatar avatar-50 coverimg rounded"><img
+                                                src="assets/img/modern-ai-image/user-1.jpg" alt=""></div>
+                                    </div>
+                                    <div class="col-auto mb-3 mb-sm-0">
+                                        <h6 class="mb-0">Kim San</h6>
+                                        <p class="small text-secondary">ME, M.Tech, San Diago</p>
+                                    </div>
+                                    <div class="col-12 col-sm-auto ms-auto mb-sm-0">
+                                        <button type="button" class="btn btn-primary">COMENZAR AHORA</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card adminuiux-card shadow-sm mb-4" id="description">
+                            <div class="card-header">
+                                <h6>Sobre este curso</h6>
+                            </div>
+                            <div class="card-body">
+                                <p>Explora cómo dar estilo a tu sitio web usando CSS. Personaliza dimensiones y centrado de elementos, estilos de textos y mucho más..</p>
+                                
+                                <div class="collapse mb-3" id="collapse-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada erat vel
+                                        semper imperdiet. Pellentesque porttitor egestas sem ac suscipit. Suspendisse
+                                        nec porta nisl, vitae ornare augue. Phasellus tempus varius tellus facilisis
+                                        blandit. Nulla vel lobortis lectus, at tincidunt diam. Etiam pellentesque nisi
+                                        quis nisi fermentum, scelerisque aliquam sem tempor. Aliquam erat ante, auctor
+                                        quis tortor ut, aliquam sollicitudin libero. Praesent vel tincidunt nisi.
+                                        Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent arcu
+                                        augue, consectetur ac scelerisque nec, pellentesque sit amet nisi. In eros
+                                        purus, interdum tristique lorem at, placerat scelerisque nulla. Curabitur luctus
+                                        turpis non cursus aliquet. Nunc eu tortor a elit congue facilisis vitae nec
+                                        eros.</p>
+                                </div><button class="btn btn-sm btn-link" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-content" aria-expanded="false"
+                                    aria-controls="collapse-content">Read more</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card adminuiux-card shadow-sm mb-4">
+                            <div class="card-header">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6>Contenidos</h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <h5 class="text-theme-1">30%</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="progress w-100 height-dynamic rounded-0" style="--h-dynamic: 5px"
+                                role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                                aria-valuemax="100">
+                                <div class="progress-bar progress-bar-striped bg-theme-1" style="width: 30%"></div>
+                            </div>
+                            <div class="card-body pb-0 overflow-y-auto height-dynamic" style="--h-dynamic: 80%">
+                                <div class="row">
+                                    <div class="col-auto mb-3">
+                                        <div class="avatar avatar-40 rounded bg-theme-1">
+                                            <h5>01</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="card adminuiux-card bg-theme-1">
+                                            <div class="card-body">
+                                                <div class="row mb-2">
+                                                    <div class="col">
+                                                        <h6>Introduction</h6>
+                                                        <p class="small opacity-75">The basic information about user and
+                                                            user experience</p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="btn btn-square rounded-circle btn-outline-light"><i
+                                                                class="bi bi-pause h5"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col">
+                                                        <p class="small opacity-50">0:45min</p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <p class="small opacity-50">10:00min</p>
+                                                    </div>
+                                                </div>
+                                                <div class="progress w-100 height-dynamic bg-white-opacity rounded-0"
+                                                    style="--h-dynamic: 5px" role="progressbar"
+                                                    aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-white"
+                                                        style="width: 30%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto mb-3">
+                                        <div class="avatar avatar-40 rounded border">
+                                            <h5>02</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row mb-2">
+                                                    <div class="col">
+                                                        <h6>Working with Tools</h6>
+                                                        <p class="small opacity-75">The basic information about user and
+                                                            user experience</p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="btn btn-square rounded-circle btn-link"><i
+                                                                class="bi bi-play h5"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col">
+                                                        <p class="small opacity-50">2:30min</p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <p class="small opacity-50">10:00min</p>
+                                                    </div>
+                                                </div>
+                                                <div class="progress w-100 height-dynamic rounded-0"
+                                                    style="--h-dynamic: 5px" role="progressbar"
+                                                    aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-theme-1"
+                                                        style="width: 25%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto mb-3">
+                                        <div class="avatar avatar-40 rounded border">
+                                            <h5>03</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row mb-2">
+                                                    <div class="col">
+                                                        <h6>Assignment</h6>
+                                                        <p class="small opacity-75">Test your knowledge</p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="btn btn-square rounded-circle btn-link theme-red"><i
+                                                                class="bi bi-lock h5"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col">
+                                                        <p class="small opacity-50">00:00min</p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <p class="small opacity-50">30:00min</p>
+                                                    </div>
+                                                </div>
+                                                <div class="progress w-100 height-dynamic rounded-0"
+                                                    style="--h-dynamic: 5px" role="progressbar"
+                                                    aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-theme-1"
+                                                        style="width: 1%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto mb-3">
+                                        <div class="avatar avatar-40 rounded border">
+                                            <h5>04</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row mb-2">
+                                                    <div class="col">
+                                                        <h6>Introduction</h6>
+                                                        <p class="small opacity-75">The basic information about user and
+                                                            user experience</p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="btn btn-square rounded-circle btn-link theme-red"><i
+                                                                class="bi bi-lock h5"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col">
+                                                        <p class="small opacity-50">00:00min</p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <p class="small opacity-50">10:00min</p>
+                                                    </div>
+                                                </div>
+                                                <div class="progress w-100 height-dynamic rounded-0"
+                                                    style="--h-dynamic: 5px" role="progressbar"
+                                                    aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                                                    aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped bg-theme-1"
+                                                        style="width: 1%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+  
+
+    <div class="position-fixed bottom-0 end-0 m-3 z-index-5"><button
+            class="btn btn-square btn-theme shadow rounded-circle" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#theming" aria-controls="theming"><i class="bi bi-palette"></i></button><br><button
+            class="btn btn-theme btn-square shadow mt-2 d-none rounded-circle" id="backtotop"><i
+                class="bi bi-arrow-up"></i></button></div>
+</body>
+</html>
